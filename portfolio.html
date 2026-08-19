@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-MZ">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfólio — Essência Horizonte</title>
+<meta name="description" content="Exemplos de sites criados pela Essência Horizonte para diferentes tipos de negócio.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="boas-vindas" id="boasVindas">
+  <span>👋 Bem-vindo(a) à <strong>Essência Horizonte</strong></span>
+  <button class="boas-vindas-fechar" id="fecharBoasVindas" aria-label="Fechar mensagem">✕</button>
+</div>
+
+<div class="pesquisa-overlay" id="pesquisaOverlay">
+  <div class="pesquisa-caixa">
+    <div class="pesquisa-input-linha">
+      <span aria-hidden="true">🔍</span>
+      <input type="text" id="pesquisaInput" placeholder="Pesquisar no site... ex: preços, cartazes, contacto">
+      <button class="pesquisa-fechar" id="fecharPesquisa" aria-label="Fechar pesquisa">✕</button>
+    </div>
+    <p class="pesquisa-etiqueta">Pesquisas frequentes</p>
+    <ul class="pesquisa-lista" id="pesquisaLista"></ul>
+  </div>
+</div>
+
+<header class="site-header" id="topo">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">Essência <span>Horizonte</span></a>
+    <div class="header-acoes">
+      <button class="icone-pesquisa" id="abrirPesquisa" aria-label="Abrir pesquisa">🔍</button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Início</a>
+      <a href="index.html#sobre">Sobre nós</a>
+      <a href="servicos.html">Serviços</a>
+      <a href="portfolio.html" class="ativo">Portfólio</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="#" class="btn btn-primary btn-nav whatsapp-link" target="_blank" rel="noopener">Falar no WhatsApp</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="pagina-hero">
+    <div class="container">
+      <p class="eyebrow">Portfólio</p>
+      <h1>Alguns exemplos do que podemos criar para o seu negócio.</h1>
+      <p class="pagina-hero-lead">Sites de demonstração, criados para mostrar como adaptamos o design a diferentes tipos de negócio.</p>
+    </div>
+  </section>
+
+  <section class="portfolio">
+    <div class="container">
+      <div class="portfolio-grid">
+
+        <!-- Atualize o href quando publicar o repositório de portfólio -->
+        <a href="#" class="portfolio-card" target="_blank" rel="noopener">
+          <div class="portfolio-tag">Advocacia</div>
+          <h3>Chissano &amp; Associados</h3>
+          <p>Site institucional para escritório de advogados — sóbrio, credível, focado em transmitir confiança.</p>
+          <span class="link-saber-mais">Ver site de demonstração →</span>
+        </a>
+
+        <a href="#" class="portfolio-card" target="_blank" rel="noopener">
+          <div class="portfolio-tag">Saúde</div>
+          <h3>Sorriso Vida</h3>
+          <p>Site para clínica dentária — visual fresco e acolhedor, com destaque para os serviços e marcação de consultas.</p>
+          <span class="link-saber-mais">Ver site de demonstração →</span>
+        </a>
+
+        <a href="#" class="portfolio-card" target="_blank" rel="noopener">
+          <div class="portfolio-tag">Imobiliário</div>
+          <h3>Vista Horizonte</h3>
+          <p>Site para imobiliária — elegante, com destaque visual para os imóveis disponíveis.</p>
+          <span class="link-saber-mais">Ver site de demonstração →</span>
+        </a>
+
+      </div>
+
+      <p class="portfolio-nota">💡 Estes são sites fictícios, criados para fins de demonstração do nosso trabalho.</p>
+    </div>
+  </section>
+
+  <section class="cta-final">
+    <div class="container cta-final-inner">
+      <h2>Quer um site assim para o seu negócio?</h2>
+      <div class="cta-final-actions">
+        <a href="servicos.html" class="btn btn-ghost">Ver serviços</a>
+        <a href="#" class="btn btn-primary whatsapp-link" target="_blank" rel="noopener">💬 Falar no WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>&copy; <span id="anoAtual"></span> Essência Horizonte. Todos os direitos reservados.</p>
+    <a href="#topo" class="voltar-topo">Voltar ao topo ↑</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

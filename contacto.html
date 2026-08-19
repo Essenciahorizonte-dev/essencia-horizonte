@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-MZ">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto — Essência Horizonte</title>
+<meta name="description" content="Fale com a Essência Horizonte pelo WhatsApp ou email. Perguntas frequentes sobre os nossos serviços.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="boas-vindas" id="boasVindas">
+  <span>👋 Bem-vindo(a) à <strong>Essência Horizonte</strong></span>
+  <button class="boas-vindas-fechar" id="fecharBoasVindas" aria-label="Fechar mensagem">✕</button>
+</div>
+
+<div class="pesquisa-overlay" id="pesquisaOverlay">
+  <div class="pesquisa-caixa">
+    <div class="pesquisa-input-linha">
+      <span aria-hidden="true">🔍</span>
+      <input type="text" id="pesquisaInput" placeholder="Pesquisar no site... ex: preços, cartazes, contacto">
+      <button class="pesquisa-fechar" id="fecharPesquisa" aria-label="Fechar pesquisa">✕</button>
+    </div>
+    <p class="pesquisa-etiqueta">Pesquisas frequentes</p>
+    <ul class="pesquisa-lista" id="pesquisaLista"></ul>
+  </div>
+</div>
+
+<header class="site-header" id="topo">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">Essência <span>Horizonte</span></a>
+    <div class="header-acoes">
+      <button class="icone-pesquisa" id="abrirPesquisa" aria-label="Abrir pesquisa">🔍</button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Início</a>
+      <a href="index.html#sobre">Sobre nós</a>
+      <a href="servicos.html">Serviços</a>
+      <a href="portfolio.html">Portfólio</a>
+      <a href="contacto.html" class="ativo">Contacto</a>
+      <a href="#" class="btn btn-primary btn-nav whatsapp-link" target="_blank" rel="noopener">Falar no WhatsApp</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="pagina-hero">
+    <div class="container">
+      <p class="eyebrow">Contacto</p>
+      <h1>Vamos dar vida ao seu negócio online.</h1>
+      <p class="pagina-hero-lead">Fale connosco agora mesmo pelo WhatsApp — é a forma mais rápida de começar o seu projeto.</p>
+    </div>
+  </section>
+
+  <section class="contacto" id="contacto">
+    <div class="container contacto-grid">
+      <div class="contacto-texto">
+        <p class="eyebrow">Fale connosco</p>
+        <h2>Estamos prontos para ajudar.</h2>
+        <p>Envie-nos uma mensagem e respondemos o mais rápido possível.</p>
+      </div>
+      <div class="contacto-card">
+        <a href="#" class="btn btn-whatsapp whatsapp-link" target="_blank" rel="noopener">💬 Enviar mensagem no WhatsApp</a>
+        <div class="contacto-info">
+          <p><strong>WhatsApp:</strong> +258 86 842 1741</p>
+          <p><strong>Email:</strong> contactoessenciahorizonte@gmail.com</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" id="faq">
+    <div class="container">
+      <p class="eyebrow">Dúvidas comuns</p>
+      <h2>Perguntas frequentes</h2>
+
+      <div class="faq-lista">
+        <div class="faq-item">
+          <button class="faq-pergunta" aria-expanded="false">
+            <span>Quanto tempo demora a criação de um site?</span>
+            <span class="faq-icone" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-resposta"><p>Depende da complexidade do projeto. Depois de percebermos o que o seu negócio precisa, damos-lhe um prazo claro antes de começarmos.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-pergunta" aria-expanded="false">
+            <span>Preciso de pagar hospedagem ou domínio à parte?</span>
+            <span class="faq-icone" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-resposta"><p>Explicamos todas as opções disponíveis antes de avançar, para que saiba exatamente o que está incluído e o que é opcional, sem surpresas.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-pergunta" aria-expanded="false">
+            <span>Como funciona o serviço "Vida aos Cartazes"?</span>
+            <span class="faq-icone" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-resposta"><p>Envia-nos o seu cartaz e, em pouco tempo, devolvemos uma versão animada, pronta para partilhar nas redes sociais e no WhatsApp.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-pergunta" aria-expanded="false">
+            <span>Posso pedir alterações depois de o site estar pronto?</span>
+            <span class="faq-icone" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-resposta"><p>Sim. Continuamos disponíveis após a entrega para ajustes e dúvidas que possam surgir.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-pergunta" aria-expanded="false">
+            <span>Como posso começar o meu projeto?</span>
+            <span class="faq-icone" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-resposta"><p>Basta enviar-nos uma mensagem pelo WhatsApp através do botão no topo do site. Respondemos o mais rápido possível.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>&copy; <span id="anoAtual"></span> Essência Horizonte. Todos os direitos reservados.</p>
+    <a href="#topo" class="voltar-topo">Voltar ao topo ↑</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

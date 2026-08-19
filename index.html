@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-MZ">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Essência Horizonte — Sites que vendem, cartazes que ganham vida</title>
+<meta name="description" content="Essência Horizonte — Criação de sites profissionais e transformação de cartazes estáticos em cartazes animados. Moçambique.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="boas-vindas" id="boasVindas">
+  <span>👋 Bem-vindo(a) à <strong>Essência Horizonte</strong></span>
+  <button class="boas-vindas-fechar" id="fecharBoasVindas" aria-label="Fechar mensagem">✕</button>
+</div>
+
+<div class="pesquisa-overlay" id="pesquisaOverlay">
+  <div class="pesquisa-caixa">
+    <div class="pesquisa-input-linha">
+      <span aria-hidden="true">🔍</span>
+      <input type="text" id="pesquisaInput" placeholder="Pesquisar no site... ex: preços, cartazes, contacto">
+      <button class="pesquisa-fechar" id="fecharPesquisa" aria-label="Fechar pesquisa">✕</button>
+    </div>
+    <p class="pesquisa-etiqueta">Pesquisas frequentes</p>
+    <ul class="pesquisa-lista" id="pesquisaLista"></ul>
+  </div>
+</div>
+
+<header class="site-header" id="topo">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">Essência <span>Horizonte</span></a>
+    <div class="header-acoes">
+      <button class="icone-pesquisa" id="abrirPesquisa" aria-label="Abrir pesquisa">🔍</button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html" class="ativo">Início</a>
+      <a href="index.html#sobre">Sobre nós</a>
+      <a href="servicos.html">Serviços</a>
+      <a href="portfolio.html">Portfólio</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="#" class="btn btn-primary btn-nav whatsapp-link" target="_blank" rel="noopener">Falar no WhatsApp</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero" id="inicio">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="container hero-inner">
+      <p class="eyebrow">Sites &amp; Cartazes Animados</p>
+      <h1>Damos ao seu negócio<br>um sítio na internet —<br><span class="highlight">e vida aos seus cartazes.</span></h1>
+      <p class="hero-lead">A Essência Horizonte cria sites profissionais e transforma cartazes parados em cartazes em movimento, para o seu negócio ser visto, lembrado e procurado.</p>
+      <div class="hero-actions">
+        <a href="#" class="btn btn-primary whatsapp-link" target="_blank" rel="noopener">💬 Falar agora no WhatsApp</a>
+        <a href="servicos.html" class="btn btn-ghost">Ver serviços</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre nós — secção completa (como no site de referência, dentro da Home) -->
+  <section class="sobre" id="sobre">
+    <div class="container">
+      <p class="eyebrow">Sobre nós</p>
+      <h2>Quem cuida do seu site, é gente de verdade.</h2>
+      <p class="sobre-intro">Não somos só código. Somos uma equipa moçambicana que acompanha cada projeto do início ao fim, para que o seu negócio tenha uma presença online à altura do trabalho que já faz no dia a dia.</p>
+
+      <div class="equipa-grid">
+        <div class="pessoa-card">
+          <div class="foto-frame">
+            <img src="images/fundador.jpg" alt="Liedson Chana, fundador da Essência Horizonte" onerror="this.parentElement.classList.add('sem-foto')">
+            <span class="foto-placeholder-texto">Coloque aqui a sua foto<br><small>images/fundador.jpg</small></span>
+          </div>
+          <h3>Liedson Chana</h3>
+          <p class="pessoa-cargo">Fundador &mdash; Direção &amp; Atendimento</p>
+        </div>
+        <div class="pessoa-card">
+          <div class="foto-frame">
+            <img src="images/equipa-1.jpg" alt="Membro da equipa Essência Horizonte" onerror="this.parentElement.classList.add('sem-foto')">
+            <span class="foto-placeholder-texto">Coloque aqui a foto<br><small>images/equipa-1.jpg</small></span>
+          </div>
+          <h3>Equipa</h3>
+          <p class="pessoa-cargo">Design &amp; Criação</p>
+        </div>
+        <div class="pessoa-card">
+          <div class="foto-frame">
+            <img src="images/equipa-2.jpg" alt="Membro da equipa Essência Horizonte" onerror="this.parentElement.classList.add('sem-foto')">
+            <span class="foto-placeholder-texto">Coloque aqui a foto<br><small>images/equipa-2.jpg</small></span>
+          </div>
+          <h3>Equipa</h3>
+          <p class="pessoa-cargo">Animação de Cartazes</p>
+        </div>
+      </div>
+
+      <div class="valores-grid">
+        <div class="valor-item">
+          <span class="valor-icone" aria-hidden="true">🤝</span>
+          <h4>Atendimento próximo</h4>
+          <p>Falamos diretamente consigo, do primeiro contacto até à entrega final.</p>
+        </div>
+        <div class="valor-item">
+          <span class="valor-icone" aria-hidden="true">⚡</span>
+          <h4>Entrega organizada</h4>
+          <p>Prazos claros e comunicação constante durante todo o projeto.</p>
+        </div>
+        <div class="valor-item">
+          <span class="valor-icone" aria-hidden="true">🎯</span>
+          <h4>Foco no resultado</h4>
+          <p>Cada site e cada cartaz são pensados para gerar interesse real no seu negócio.</p>
+        </div>
+        <div class="valor-item">
+          <span class="valor-icone" aria-hidden="true">🔧</span>
+          <h4>Suporte após a entrega</h4>
+          <p>Continuamos disponíveis para ajustes e dúvidas depois do site estar no ar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resumo "Serviços" — versão curta, com link para a página completa -->
+  <section class="servicos" id="servicos">
+    <div class="container">
+      <p class="eyebrow">O que fazemos</p>
+      <h2>Dois serviços. Um só objetivo: fazer o seu negócio destacar-se.</h2>
+
+      <div class="servicos-grid">
+        <article class="servico-card">
+          <div class="servico-numero">01</div>
+          <h3>Criação de Sites</h3>
+          <p>Um site profissional, feito à medida do seu negócio: rápido, bonito no computador e no celular, pronto 24 horas por dia.</p>
+          <a href="servicos.html" class="link-saber-mais">Saber mais →</a>
+        </article>
+
+        <article class="servico-card servico-destaque">
+          <div class="servico-numero">02</div>
+          <h3>Vida aos Cartazes</h3>
+          <p>Transformamos o seu cartaz parado num cartaz em movimento — perfeito para redes sociais e WhatsApp Status.</p>
+          <a href="servicos.html" class="link-saber-mais">Saber mais →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="como-funciona" id="como-funciona">
+    <div class="container">
+      <p class="eyebrow">O nosso processo</p>
+      <h2>Do primeiro contacto ao site no ar, passo a passo.</h2>
+      <div class="passos-grid">
+        <div class="passo-item">
+          <span class="passo-numero">1</span>
+          <h3>Contacto</h3>
+          <p>Fala connosco pelo WhatsApp e conta-nos o que o seu negócio precisa.</p>
+        </div>
+        <div class="passo-item">
+          <span class="passo-numero">2</span>
+          <h3>Planeamento</h3>
+          <p>Entendemos o seu negócio e desenhamos a estrutura do site ou do cartaz.</p>
+        </div>
+        <div class="passo-item">
+          <span class="passo-numero">3</span>
+          <h3>Criação</h3>
+          <p>Construímos o projeto com cuidado, mantendo-o informado ao longo do processo.</p>
+        </div>
+        <div class="passo-item">
+          <span class="passo-numero">4</span>
+          <h3>Entrega</h3>
+          <p>Recebe o trabalho pronto, testado e a funcionar — com o nosso apoio após a entrega.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="brevemente" id="brevemente">
+    <div class="container brevemente-inner">
+      <span class="brevemente-badge">Brevemente</span>
+      <h2>Estamos a preparar novos serviços.</h2>
+      <p>Em breve vamos abrir mais formas de ajudar o seu negócio a crescer na internet. Entre em contacto para ser dos primeiros a saber.</p>
+    </div>
+  </section>
+
+  <!-- Chamada final para o Portfólio e Contacto -->
+  <section class="cta-final">
+    <div class="container cta-final-inner">
+      <h2>Quer ver exemplos do nosso trabalho?</h2>
+      <div class="cta-final-actions">
+        <a href="portfolio.html" class="btn btn-ghost">Ver portfólio</a>
+        <a href="contacto.html" class="btn btn-primary">Falar connosco</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>&copy; <span id="anoAtual"></span> Essência Horizonte. Todos os direitos reservados.</p>
+    <a href="#topo" class="voltar-topo">Voltar ao topo ↑</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
