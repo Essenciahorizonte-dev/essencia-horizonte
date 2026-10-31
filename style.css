@@ -369,3 +369,143 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
   .valores-grid, .passos-grid, .portfolio-grid { grid-template-columns: 1fr; }
   .hero { padding: 100px 0 110px; }
 }
+/* =====================================================
+   CORRECÇÃO RESPONSIVA — ESSÊNCIA HORIZONTE
+   ===================================================== */
+
+/* Garantir as cores originais do cabeçalho e do hero */
+.site-header {
+  background: rgba(16, 20, 24, 0.9) !important;
+}
+
+.logo {
+  color: #FFFFFF !important;
+}
+
+.hero {
+  background: var(--tinta) !important;
+  color: var(--branco);
+  width: 100%;
+}
+
+/* Ajustes para telemóveis */
+@media (max-width: 760px) {
+
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .header-inner {
+    height: 70px;
+  }
+
+  .logo {
+    font-size: 1.15rem;
+  }
+
+  .hero {
+    padding: 85px 0 90px;
+    min-height: auto;
+  }
+
+  .hero-inner {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero .eyebrow {
+    font-size: 0.68rem;
+    letter-spacing: 0.10em;
+  }
+
+  .hero h1 {
+    font-size: clamp(2rem, 8.5vw, 2.7rem);
+    line-height: 1.12;
+    overflow-wrap: break-word;
+    margin-bottom: 22px;
+  }
+
+  .hero-lead {
+    font-size: 0.98rem;
+    line-height: 1.65;
+    margin-bottom: 28px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .hero-actions .btn {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .sobre,
+  .servicos,
+  .como-funciona,
+  .perguntas,
+  .contacto {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .equipa-grid {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+      "fundador"
+      "membro2"
+      "membro3"
+      "membro4";
+    width: 100%;
+    max-width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 38px;
+  }
+
+  .foto-frame {
+    width: 100%;
+  }
+
+  .valores-grid,
+  .passos-grid,
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .servico-card {
+    padding: 26px 22px;
+  }
+
+  .sobre-teaser-grid {
+    gap: 28px;
+  }
+
+  .contacto-card {
+    padding: 22px;
+  }
+
+  .rodape-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* Ajustes para ecrãs muito estreitos */
+@media (max-width: 380px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .btn {
+    padding: 14px 18px;
+  }
+}
