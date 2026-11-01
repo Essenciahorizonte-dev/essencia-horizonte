@@ -208,15 +208,15 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
   overflow: hidden;
   border-radius: 10px;
   margin-bottom: 18px;
+  background: #E4DED3;
 }
 
 .foto-frame img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center center;
 }
-
 /* EQUIPA — CELULAR */
 
 @media (max-width: 760px) {
