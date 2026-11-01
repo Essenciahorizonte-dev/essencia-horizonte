@@ -169,36 +169,85 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
 .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
 
 /* Sobre nós / Equipa / Valores */
-.sobre { padding: 110px 0; }
-.sobre h2 { font-size: clamp(1.7rem, 3vw, 2.3rem); font-weight: 600; margin-bottom: 18px; max-width: 620px; }
-.sobre-intro { color: var(--cinza-texto); max-width: 620px; margin-bottom: 56px; }
+/* EQUIPA — COMPUTADOR */
 
-.equipa-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; margin-bottom: 72px; }
-.pessoa-card { text-align: center; }
+.equipa-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-areas:
+    ". fundador ."
+    "membro2 membro3 membro4";
+  gap: 32px;
+  margin-bottom: 72px;
+}
+
+.pessoa-card {
+  text-align: center;
+  min-width: 0;
+}
+
+.pessoa-card:nth-child(1) {
+  grid-area: fundador;
+}
+
+.pessoa-card:nth-child(2) {
+  grid-area: membro2;
+}
+
+.pessoa-card:nth-child(3) {
+  grid-area: membro3;
+}
+
+.pessoa-card:nth-child(4) {
+  grid-area: membro4;
+}
 
 .foto-frame {
   width: 100%;
   aspect-ratio: 1 / 1;
-  border-radius: var(--raio);
   overflow: hidden;
+  border-radius: 10px;
   margin-bottom: 18px;
-  border: 1px solid var(--cinza-linha);
 }
-.foto-frame img { width: 100%; height: 100%; object-fit: cover; object-position: top center; }
-.foto-frame.sem-foto {
-  display: flex; align-items: center; justify-content: center;
-  background: linear-gradient(135deg, var(--ambar), var(--rosa));
+
+.foto-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
 }
-.foto-iniciais { font-family: var(--fonte-titulo); color: var(--branco); font-size: 2.2rem; font-weight: 600; }
 
-.pessoa-card h3 { font-size: 1.1rem; font-weight: 600; margin-bottom: 4px; }
-.pessoa-cargo { color: var(--rosa); font-size: 0.88rem; font-weight: 600; }
+/* EQUIPA — CELULAR */
 
-.valores-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; border-top: 1px solid var(--cinza-linha); padding-top: 48px; }
-.valor-item { text-align: left; }
-.valor-icone { font-size: 1.6rem; display: block; margin-bottom: 12px; }
-.valor-item h4 { font-size: 1rem; font-weight: 600; margin-bottom: 6px; }
-.valor-item p { font-size: 0.88rem; color: var(--cinza-texto); }
+@media (max-width: 760px) {
+
+  .equipa-grid {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+      "fundador"
+      "membro2"
+      "membro3"
+      "membro4";
+
+    width: 100%;
+    max-width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 36px;
+  }
+
+  .pessoa-card {
+    width: 100%;
+    text-align: center;
+  }
+
+  .foto-frame {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
 
 /* Teaser "Sobre nós" na página inicial */
 .sobre-teaser { padding: 100px 0; }
